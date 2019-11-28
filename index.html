@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>teampick</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>FC INTERNACIONAL 팀짜기 웹사이트</h1>
+      <h3>1. 금주 참가자 입력</h3>
+      <form class="team-member">
+        <input type="text" id="pl-name" placeholder="선수명" />
+        <input type="text" id="pl-atk" placeholder="공격력 (1~99)" />
+        <input type="text" id="pl-mid" placeholder="미드필드 능력 (1~99)" />
+        <input type="text" id="pl-def" placeholder="수비력 (1~99)" />
+        <input type="button" onclick="insertPlayers()" value="등록" />
+      </form>
+      <h3>2. 금주 참가자 목록</h3>
+    </div>
+    <div id="output"></div>
+    <script src="player-input.js"></script>
+  </body>
+</html>

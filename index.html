@@ -8,24 +8,156 @@
   <body>
     <div class="container-1">
       <h1>FC INTERNACIONAL 팀짜기 웹사이트</h1>
-      <h3>1. 금주 참가자 입력</h3>
+      <h3>0. FC Internacional 선수명단</h3>
+        <table cellspacing="0" border="1" id="players" style="border-collapse: collapse;">
+          <thead>
+            <tr>
+              <th>참가여부</th>
+              <th>선수명</th>
+              <th>종합점수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>권영빈</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>강창성</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>권기도</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>김낙근</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>김노원</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>김민재</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>김유수</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>김천우</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>임동규</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>이동현</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>백정민</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>서성민</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>나영광</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>이규호</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>이동준</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>이원종</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>김재민</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>정수현</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>조성민</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>홍준모</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>연창석</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>정태영</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>이창현</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="player_CheckBox"/></td>
+              <td>윤지환</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+        </table>
+        <input id="btnPick" type="button" onclick="insertFirstPlayers()" value="참가자 등록" />
+
+      <h3>1. 추가 참가자 입력</h3>
       <form class="team-member">
         <input type="text" id="pl-name" placeholder="선수명" />
-        <input type="text" id="pl-atk" placeholder="공격력 (1~99)" />
-        <input type="text" id="pl-mid" placeholder="미드필드 능력 (1~99)" />
-        <input type="text" id="pl-def" placeholder="수비력 (1~99)" />
+        <input type="text" id="pl-score" placeholder="종합 능력치(1~100)" />
         <input type="button" onclick="insertPlayers()" value="등록" />
       </form>
     </div>
     <div class="container-2">
       <h3>2. 금주 참가자 목록</h3>
-      <div id="output"></div>
-      <input type="button" onclick="pickPlayers()" value="팀뽑기" />
+    <div id="output"></div>
+    <input type="button" onclick="pickPlayers()" value="팀뽑기" />
     </div>
     <div>
-      <h3>3. 금주 팀 목록</h3>
-      <div id="outputTeamA"></div>
-      <div id="outputTeamB"></div>
+    <h3>3. 금주 팀 목록</h3>
+    <div id="outputTeamA"></div>
+    <div id="outputTeamB"></div>
     </div>
     <script src="player-input.js"></script>
   </body>

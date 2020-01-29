@@ -1,6 +1,7 @@
 var thisWeekPlayer = [];
 
 var messageBox = document.getElementById("output");
+var messageBox_2 = document.getElementById("output2");
 var messageBox2 = document.getElementById("outputTeamA");
 var messageBox3 = document.getElementById("outputTeamB");
 
@@ -8,17 +9,20 @@ function insertFirstPlayers() {
   var tdArr = [];
   var grid = document.getElementById("players");
   var checkBoxes = grid.getElementsByTagName("INPUT");
+  var playerNames = document.getElementById("players")
 
   for (var i = 0; i < checkBoxes.length; i++) {
     if(checkBoxes[i].checked==true) {
       var data = checkBoxes[i].parentNode.parentNode;
-      var data_rd = data.childNodes[1];
+      var playerName = data.cells[1].innerHTML
+      var playerScore = data.cells[2].innerHTML
 
-      thisWeekPlayer.push(data.textContent);
-      tdArr.push(name);
+      thisWeekPlayer.push([playerName, playerScore]);
+      tdArr.push(playerName);
     }
   }
-  messageBox.innerHTML = thisWeekPlayer + "<br>";
+  messageBox.innerHTML = "{"+ thisWeekPlayer + "}" + "<br>";
+  //messageBox_2.innerHTML = tdArr + "<br>";
 }
 
 /*function insertPlayers() {

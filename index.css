@@ -1,6 +1,6 @@
 body {
-  background-color:#ff5252;
-  color: #fff;
+  background-color:#f4e7d3;
+  color: #1f4e5f;
 }
 
 h1,h3,td {
@@ -9,7 +9,7 @@ h1,h3,td {
 
 table {
   border-collapse: separate;
-  border: 1.5px solid #fff;
+  border: 1.5px solid #1f4e5f;
   text-align: center;
 }
 
@@ -20,10 +20,17 @@ table td {
 
 input[type=button], input[type=text], input[type=number] {
   background-color: rgb(255, 255, 255);
-  border: 1.5px solid #fff;
-  color: #ff5252;
+  width: 150px;
+  border: 0.5px solid #1f4e5f;
+  color: #1f4e5f;
   padding: 8px 8px;
   text-decoration: none;
   margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  opacity: 1;
   cursor: pointer;
 }

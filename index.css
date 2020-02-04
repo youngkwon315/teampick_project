@@ -1,0 +1,29 @@
+body {
+  background-color:#ff5252;
+  color: #fff;
+}
+
+h1,h3,td {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+table {
+  border-collapse: separate;
+  border: 1.5px solid #fff;
+  text-align: center;
+}
+
+table td {
+  width: 120px;
+  line-height: 1.5;
+}
+
+input[type=button], input[type=text], input[type=number] {
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid #fff;
+  color: #ff5252;
+  padding: 8px 8px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}

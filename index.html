@@ -4,12 +4,13 @@
     <title>teampick</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container-1">
-      <h1>FC INTERNACIONAL 팀짜기 웹사이트</h1>
-      <h3>0. FC Internacional 선수명단</h3>
-        <table cellspacing="0" border="1" id="players" style="border-collapse: collapse;">
+      <h1>FC INTERNACIONAL Teams of the week</h1>
+      <h3>0. FC Internacional Players (v.200204)</h3>
+        <table id="players">
           <thead>
             <tr>
               <th>참가여부</th>
@@ -144,8 +145,8 @@
 
       <h3>1. 추가 참가자 입력</h3>
       <form class="team-member">
-        <input type="text" id="pl-name" placeholder="선수명" />
-        <input type="text" id="pl-score" placeholder="종합 능력치(1~100)" />
+        <input type="text" id="name" placeholder="선수명" />
+        <input type="number" id="score" placeholder="종합 능력치(1~10)" min="0" max="10" />
         <input type="button" onclick="insertPlayers()" value="등록" />
       </form>
     </div>
